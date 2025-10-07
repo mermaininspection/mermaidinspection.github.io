@@ -1,71 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mermaid Inspection Services LLP</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mermaid Inspection Services LLP</title>
+  <style>
+    /* --- General --- */
+    body { margin:0; font-family: Arial, sans-serif; background:#f4f4f9; color:#333; }
+    a { text-decoration:none; color:#004080; }
+    h1,h2,h3,h4 { margin:0; }
+    img { max-width:100%; }
+
+    /* --- Header --- */
+    header { background:#004080; color:#fff; padding:20px 0; text-align:center; }
+    nav { margin-top:10px; }
+    nav a { color:#fff; margin:0 15px; font-weight:bold; }
+
+    /* --- Hero Section --- */
+    .hero { display:flex; flex-wrap:wrap; background:#e0e7ff; padding:50px 20px; }
+    .hero .left, .hero .right { flex:1; min-width:300px; padding:20px; }
+    .hero .left h2 { font-size:2rem; margin-bottom:20px; }
+    .hero .left p { font-size:1.1rem; line-height:1.6; }
+    .hero .left .button { display:inline-block; background:#004080; color:#fff; padding:10px 20px; border-radius:5px; margin-top:20px; }
+    .hero .left .button:hover { background:#0066cc; }
+
+    /* --- Section --- */
+    section { padding:50px 20px; max-width:1200px; margin:0 auto; }
+    section h2 { text-align:center; color:#004080; margin-bottom:40px; font-size:2rem; }
+
+    /* --- Services Grid --- */
+    .services { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+    .service-item { background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .service-item h4 { color:#004080; margin-bottom:10px; }
+    .service-item ul { list-style:disc; padding-left:20px; }
+
+    /* --- Team Section --- */
+    .team { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; }
+    .team-member { background:#fff; padding:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .team-member h4 { color:#004080; margin-bottom:10px; }
+
+    /* --- Footer --- */
+    footer { background:#222; color:#aaa; text-align:center; padding:30px 20px; }
+    footer a { color:#fff; }
+
+    /* --- Responsive --- */
+    @media(max-width:768px){
+      .hero { flex-direction:column; }
+    }
+  </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1 class="logo">Mermaid Inspection Services LLP</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h2>Rope Access & Inspection Specialists</h2>
-            <p>Safe, Efficient, and Experienced Team for Marine & Industrial Solutions</p>
-        </div>
-    </section>
+<!-- Header -->
+<header>
+  <h1>Mermaid Inspection Services LLP</h1>
+  <p>Marine Rope Access & Maintenance Solutions Since 2024</p>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>Mermaid Inspection Services LLP, established in 2024, provides professional Rope Access, Inspection, and Maintenance solutions for marine and industrial sectors. Our team consists of IRATA-certified rope access technicians with multi-NDT expertise.</p>
-        </div>
-    </section>
+<!-- Hero Section -->
+<div class="hero">
+  <div class="left">
+    <h2>Trusted Marine & Rope Access Solutions</h2>
+    <p>We deliver reliable inspection, repair, and coating services for vessels worldwide. Our certified inspectors, technicians, and coating specialists ensure safe, efficient, and Class-compliant operations onboard, offshore, and in drydocks.</p>
+    <a href="#contact" class="button">Get a Quote</a>
+  </div>
+  <div class="right">
+    <img src="assets/images/hero-image.jpg" alt="Rope Access & Marine Inspection">
+  </div>
+</div>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-list">
-                <div class="service">Cargo Hold / Oil Tank Cleaning</div>
-                <div class="service">Coating & Maintenance</div>
-                <div class="service">UTM / NDT Inspection</div>
-                <div class="service">Qualified Rope Access Manpower Supply</div>
-            </div>
-        </div>
-    </section>
+<!-- Services Section -->
+<section id="services">
+  <h2>Our Services</h2>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>📞 +91 70948 58914 | +91 70948 58915</p>
-            <p>📧 info@mermaidinspection.in</p>
-            <p>🌍 Anjugramam, Kanyakumari District, India</p>
-        </div>
-    </section>
+  <h3>Marine Sector Services</h3>
+  <div class="services">
+    <div class="service-item">
+      <h4>Inspection & NDT</h4>
+      <ul>
+        <li>Visual inspection of vessel hull</li>
+        <li>Ultrasonic Thickness Measurement (UTM)</li>
+        <li>Cargo tank inspection (VT, NDT)</li>
+        <li>Advanced NDT: MPI, DPT, PAUT</li>
+        <li>Class & Flag State Surveys</li>
+      </ul>
+    </div>
+    <div class="service-item">
+      <h4>Maintenance & Coating</h4>
+      <ul>
+        <li>Hull surface prep & painting</li>
+        <li>Spot blasting & coating</li>
+        <li>Cargo hold cleaning & UHP water jetting</li>
+        <li>Rope-supported structural repairs</li>
+      </ul>
+    </div>
+  </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2025 Mermaid Inspection Services LLP | All Rights Reserved</p>
-        </div>
-    </footer>
+  <h3>Onshore / Oil & Gas</h3>
+  <div class="services">
+    <div class="service-item">
+      <h4>Inspection & Maintenance</h4>
+      <ul>
+        <li>Visual & NDT inspection of structures</li>
+        <li>Corrosion & thickness monitoring</li>
+        <li>Remote inspection techniques (RIT)</li>
+        <li>Confined space entry & rescue support</li>
+      </ul>
+    </div>
+    <div class="service-item">
+      <h4>Surface & Coating</h4>
+      <ul>
+        <li>Grit / hydro blasting</li>
+        <li>Spray & roller painting</li>
+        <li>Concrete repair & protective coating</li>
+        <li>Passive fire protection & insulation</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>High-Rise & Wind Sector</h3>
+  <div class="services">
+    <div class="service-item">
+      <h4>Building & Façade</h4>
+      <ul>
+        <li>High-rise façade cleaning & painting</li>
+        <li>Window washing & glazing</li>
+        <li>External lighting & signage installation</li>
+        <li>Gutter, drainage & bird netting</li>
+      </ul>
+    </div>
+    <div class="service-item">
+      <h4>Wind Turbine Services</h4>
+      <ul>
+        <li>Blade & nacelle inspection & repair</li>
+        <li>Sensor & monitoring installation</li>
+        <li>Surface cleaning & protective coating</li>
+        <li>Rope access safety audits & emergency response</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Team Section -->
+<section id="team">
+  <h2>Our Team & Edge</h2>
+  <div class="team">
+    <div class="team-member">
+      <h4>Experienced Technicians</h4>
+      <p>Worked across 20+ vessels with IRATA-certified rope access skills.</p>
+    </div>
+    <div class="team-member">
+      <h4>Global Compliance</h4>
+      <p>CDC, IRATA, API, CSWIP, PCN, GWO, OPITO certified for safe international deployment.</p>
+    </div>
+    <div class="team-member">
+      <h4>Rapid Mobilization</h4>
+      <p>Teams ready within 48 hours for India & international ports.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section / Footer -->
+<footer id="contact">
+  <h2>Contact Us</h2>
+  <p>Ground Floor, C/13 Puthukulam AHP, Alagappapuram, Kanyakumari – 629401, INDIA</p>
+  <p>📞 +91 70948 58914 | +91 98250 32194</p>
+  <p>✉ <a href="mailto:info@mermaidinspection.in">info@mermaidinspection.in</a></p>
+  <p>🌐 <a href="https://www.mermaidinspection.in">www.mermaidinspection.in</a></p>
+  <p>LinkedIn: <a href="#">QR / Profile</a></p>
+  <p>© 2025 Mermaid Inspection Services LLP. All Rights Reserved.</p>
+</footer>
+
 </body>
 </html>
